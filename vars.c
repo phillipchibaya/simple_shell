@@ -130,9 +130,6 @@ int replace_vars(info_t *info)
 		if (node)
 		{
 			replace_string(&(info->argv[i]),
-<<<<<<< HEAD
-				_strdup(_strchr(node->str, '=') + 
-=======
 				_strdup(_strchr(node->str, '=') + 1));
 			continue;
 		}
@@ -155,4 +152,3 @@ int replace_string(char **old, char *new)
 	*old = new;
 	return (1);
 }
->>>>>>> a2b93d5adecbad458f68a86ba976093b32b6e69f
